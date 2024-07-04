@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 400px;
+            background-color: aqua;
+            display: flex;
+            overflow: auto;
+            margin-left: auto;
+        }
+        div span{
+            background-color: red;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 5px;
+        } */
+        .big{
+            width: 614px;
+            height: 400px;
+            background-color: dodgerblue;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+         }
+         .small{
+            min-width:200px;
+            /* width: 192px; */
+            height: 200px;
+            background-color: deeppink;
+            margin: 2px;
+         }
+         .big:hover{
+            visibility: visible;
+         }
+         .big:hover::-webkit-scrollbar-thumb{
+            background-color: brown;
+            visibility: visible;
+         }
+         .big::-webkit-scrollbar{
+            /* display: none; */
+            background-color: transparent;
+            width: 10px;
+         }
+         .big::-webkit-scrollbar-thumb{
+            background-color: crimson;
+            border-radius: 20px;
+            visibility: hidden;
+         }
+         main{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(34, 67, 178);
+            margin: auto;
+            box-shadow: -10px -10px 20px black;
+         }
+         section{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin-left: auto;
+            box-shadow: 0 0 20px 5px black;
+         }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+        <span>Michael</span>
+    </div> -->
+    <div class="big">
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+        <div class="small"></div>
+    </div>
+    <main></main>
+    <section></section>
+</body>
+</html>

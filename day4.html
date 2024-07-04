@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="day4.css">
+
+    <style>
+        h1{
+           background-color: yellow;
+           color: aquamarine;
+           font-size: larger;
+        }
+        .col-black{
+            background-color: black;
+        }
+        #col-blue{
+            background-color: blue;
+        }
+        h2,h3{
+            background-color: red;
+            /* this is a combinator selector */
+        }
+        h1:hover{
+            background-color: teal;
+            /* a Pseudo-class selectors */
+        }
+        input[type='text']{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- For inline, internal and external css styling, the styling will only take the one closest to it which is
+    the inline, then internal before external -->
+    <main>
+        <h1 class="col-black">Lorem ipsum dolor</h1>
+        <h1 id="col-blue">Lorem ipsum dolor</h1>
+        <h2>lorem ipsum</h2>
+        <h3>lorem ipsum</h3>
+    </main>
+    <!-- Simple selectors (select elements based on name, id, class)
+    Like assigning a unique class name to an object -->
+    <!-- you reference to an ID with # and referencea class with . -->
+
+    <!-- Combinator selectors (select elements based on a specific relationship between them)
+    These prpoperties are selected with , eg h2,h3,h4 then specifying the same properties for them -->
+
+
+    <!-- Pseudo-class selectors (select elements based on a certain state) with : -->
+</body>
+</html>

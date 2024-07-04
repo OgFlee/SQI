@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudo Classes</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            transition-property: all;
+            transition-property: background-color, width, height, border-radius;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+            /* properties of the trans timing function,ease-out, ease-in-out, ease in-fast at the begining
+            and slow at the end */
+            transition-delay: 2s;
+        }
+        div:hover{
+            background-color: blue;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+        }
+        button{
+            background-color: blue;
+        }
+        button:hover{
+            background-color: red;
+        }
+        button:focus{
+            background-color: yellow;
+        }
+        button:active{
+            background-color: green;
+        }
+
+        a:visited{
+            color: purple;
+            /* this changes the color of a link when it has been visited or clicked */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <!-- When a fucos sudo class is added to  clickable button,
+     the properties activate when the object is clicked -->
+     <!-- Focus css sudo class only works on a clickable elements -->
+     <!-- the active sudo class activates when clicked and held on -->
+
+     <button>Click</button>
+     <a href="https://google.com"></a>
+</body>
+</html>

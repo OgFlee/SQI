@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border|Margins|Paddings</title>
+    <style>
+        h1{
+            border-width: 7px;
+            border-color: blue;
+            /* border-style: dashed; */
+            /* border-style: dotted; */
+            /* border-style: solid; */
+            /* border-style: ridge; */
+            border-style: double;
+        }
+        .cc{
+            width: 200px;
+            height: 200px;
+            border: 4px solid firebrick;
+            padding: 100px;
+            margin: auto;
+            /* margin-left: 600px; */  
+
+            /* specifying margin for top, right, bottom, left 
+            margin: 200px 300px 400px 250px; */
+
+            /* specifying margin another way
+            margin: 200px auto; this specifies 200px for top and bottom(y axis) and automatic for the left and right(x axis) */
+        }
+        span{
+            margin: 0 100px;
+            padding: 0 100px;
+            border: 1px solid red;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <span>Menu</span>
+        <span>Menu</span>
+        <span>Menu</span>
+    </nav>
+    <!-- <h1>Lorem ipsum dolor init</h1> -->
+    <!-- The space outside an element is the margin, 
+    in the border h1 above, the margin controls outside the border -->
+    <!-- The space inside an element is the padding,  -->
+
+    <div class="cc">
+       <p>lOREM IPSUM dolor sit </p>
+    </div>
+    <!-- added padding and margin can result to an equal width, if i give a padding of 100px amd a margin of 100px, my total width will be 200px -->
+    <!-- the things include 1, content 2, border 3, padding 4, margin are motly contained in a box -->
+    <!-- the global selector sets everything to the specified default i.e .{} -->
+    <!-- box sizing attribute maintain the content of a particular box without afecting the content and it can be set in the global selector -->
+</body>
+</html>

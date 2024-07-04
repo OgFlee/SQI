@@ -1,0 +1,57 @@
+.container{
+    background-color: grey;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin: auto;
+}
+.details{
+    margin-bottom: 20px;
+    height: 20px;
+}
+.details button{
+    background-color: rgb(46, 46, 147);
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /* margin-bottom: 10px; */
+}
+.check-stuff{
+    margin-bottom: 10px;
+}
+
+.cent {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.image-section {
+    margin-bottom: 40px;
+    background-color: lightgray;
+}
+
+.image-section img{
+   width: 1265px;
+   height: 500px;
+}
+
+.image-section p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font: bold;
+    font-weight: 500;
+}
+
+.image-section button{
+    border: none;
+    cursor: pointer;
+    background-color: lightgray;
+    color: rgb(22, 14, 14);
+}

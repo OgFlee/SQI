@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class|Elements||TRANSFORM</title>
+    <style>
+        .first::first-letter{
+            font-size: 50px;
+        }
+        .second::first-line{
+            color: blue;
+            background-color: yellow;
+        }
+        
+        /* .sqi::before{
+            content: url(paste image);
+        } */
+        .sqi::after{
+            content: ' College of ICT';
+        }
+        /* marker is used for listed items and will not accept a selector */
+        ::marker{
+            /* content: '+'; */
+            font-size: 30px;
+            color: red;
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        ::placeholder{
+            color: red;
+        }
+        .showing{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            transition: all 1s ease 1s;
+        }
+        .showing:hover{
+            transform: translateX(100px);
+            background-color: yellow;
+            
+        }
+        .showing2{
+            background-color: aqua;
+            width: 80px;
+            height: 80px;
+            transition: all 1s ease 1s;
+        }
+        .showing2:hover{
+            /* transform: rotate(50deg); for clockwise */
+            /* for anti clockwise version, you use a negative degree value */
+            transform: rotate(-50deg);
+        }
+        .showing3{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 10px lightgreen;
+            transition: all 1s ease 1s;
+        }
+        .showing3:hover{
+            transform: scale(0.5);
+        }
+        .showing4{
+            background-color: brown;
+            width: 300px;
+            height: 300px;
+            transition: all 1s ease 1s;
+        }
+        .showing4:hover{
+            transform: skew(50deg, 40deg);
+            /* transform: skewY(50deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="first">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque reiciendis magnam fuga.</p>
+    </div>
+    <div class="second">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+
+    <div>
+        <img src="" alt="">
+        <p></p>
+    </div>
+    <div class="sqi">
+        Sqi
+    </div>
+    <ul>
+        <li>test</li>
+        <li>test2</li>
+        <li>test3</li>
+        <li>test4</li>
+    </ul>
+    <input type="text" placeholder="testing">
+
+    <!-- FOR TRNASFORMATION
+    WE HAVE TRANSLATE-allows moving an element from one postion to another,, ROTATE-takes degree, ie clockwise, SKEW, SCALE -->
+
+    <div class="showing">
+         <div class="show1"></div>
+    <div class="show2"></div>
+    <div class="show3"></div>
+    <div class="show4"></div>
+    <div class="show5"></div>
+    </div>
+    
+    <div class="showing2">
+
+    </div>
+    <div class="showing3"></div>
+    <div class="showing4"></div>
+
+</body>
+</html>

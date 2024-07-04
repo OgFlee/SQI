@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34,34,35);
+}
+.head{
+    background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2020/03/netflix-a-z-guide-2020-1280x720.jpg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+   
+   
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    background-color: rgb(228,10,18);
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 16px; 
+    border-radius: 4px; 
+    border: none;
+    margin-right: 150px;
+    margin-top: -10px;
+   
+}
+.navbar a:hover{
+    background-color:#f40612;
+}
+.logo{
+    width: 170px;
+    margin-left: 120px;
+    margin-top: -10px;
+}
+.section1{
+    text-align: center;
+   padding: 200px;
+}
+.section1 h1{
+    color: white;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.section1 p{
+    color: white;
+    font-size: 24px;
+    font-weight: 400px;
+    margin-bottom: 25px;
+}
+.section1 h3{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-family: sans-serif;
+}
+.form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px 0 0 2px;
+    flex-grow: 1;
+    max-width: 400px;
+    background-color: rgb(32,32,31);
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.test-button {
+    background-color: #e50914;
+    color: #ffffff;
+    margin-left: 12px;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 30px; 
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+.test-button:hover {
+    background-color: #f40612;
+}
+
+.firstdiv{
+    background-color: rgb(1,0,1);
+    color: white;
+    margin-top: 8px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    
+}
+.style-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: fit-content; */
+}
+.image1{
+    width: 500px;
+    
+}
+.div2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    
+}
+.div2 h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.div2 p{
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+    font-family: sans-serif;
+}
+.foot
+{
+    background-color:rgb(1,0,1);
+    color: white;
+    margin-top: 8px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.foot p{
+    text-align: center;
+}
