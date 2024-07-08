@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    color: RGBA(255, 255, 255, 0.9);
+    background-color: RGB(109, 179, 63);
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    /* margin: 20px; */
+    padding: 12px;
+    font-weight: 200;
+}
+.head a{
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+.navbar{
+    background-color: RGB(255, 255, 255);
+    /* margin: 20px 0; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 15px 0;
+    gap: 280px;
+    
+    
+    
+}
+.dropdown{
+    display: flex;
+    gap: 20px;
+    
+}
+.align{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    
+}
+.align span{
+    color: rgb(17,19,19);
+    font-size: 16px;
+    font-weight: 600;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.navbar img{
+    width: 180px;
+    margin-left: 60px;
+}
+/* .all-drop{
+    position: relative;
+} */
+.mini-drop1, .mini-drop2, .mini-drop3, .mini-drop4, 
+.mini-drop5, .mini-drop6{
+    display: none;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    /* width: 150px; */
+    /* height: 200px; */
+}
+/* .all-drop ul{
+    list-style-type: none;
+} */
+.all-drop:hover .mini-drop1{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    position: absolute;
+    /* bottom: 20px; */
+    right: 680px;
+    top: 100px;
+    /* top: 100%; */
+    /* left: 0; */
+}
+.all-drop:hover .mini-drop2{
+    /* display: block; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* bottom: 20px; */
+    right: 580px;
+    top: 100px;
+}
+.all-drop:hover .mini-drop3{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* bottom: 20px; */
+    right: 500px;
+    top: 100px;
+}
+.all-drop:hover .mini-drop4{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* bottom: 20px; */
+    right: 405px;
+    top: 100px;
+}
+.all-drop:hover .mini-drop5{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* bottom: 20px; */
+    right: 305px;
+    top: 100px;
+}
+.all-drop:hover .mini-drop6{
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    /* bottom: 20px; */
+    right: 190px;
+    top: 100px;
+}
+
+.patterns{
+    background-image: url(css-pattern-by-magicpattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.text{
+    text-align: center;
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    padding-top: 80px;
+}
+.text h1{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.links{
+    text-align: center;
+    padding-top: 30px;
+    /* padding: 30px 10px; */
+    /* padding: 30px; */
+}
+.links a{
+    /* text-decoration: none;
+    color: rgb(17,16,16);
+    background-color: rgb(235,243,243); */
+    /* background-color: transparent; */
+    /* border: 2px solid rgb(17,16,16); */
+    /* padding: 20px; */
+    /* padding-left: 12px; */
+    /* margin: 0 5px; */
+    /* margin: 10px; */
+    /* font-size: 14.4px;
+    font-weight: 600;
+    font-family: sans-serif;
+    position: relative; */
+    text-decoration: none;
+    color: rgb(17,16,16);
+    background: linear-gradient(to right, rgb(17,16,16) 50%, rgb(235,243,243) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid rgb(17,16,16);
+    padding: 20px 20px;
+    margin: 0 5px;
+    font-size: 14.4px;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    
+}
+/* .links a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.5s ease; 
+    
+    
+}
+.links a:hover::after{
+    width: 100%;
+} */
+
+.links a:hover{
+    color: white;
+    /* background-color: black; */
+    /* color: rgb(235,243,243); */
+    background-position: left bottom;
+    
+}
+
+.news{
+    margin-top: 30px;
+    text-align: center;
+}
+.news a{
+    text-decoration: none;
+    color: RGB(8, 109, 195);
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+}
+.news a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Adjust thickness as needed */
+    bottom: 0;
+    left: 0;
+    background-color: RGB(8, 109, 195); /* Adjust color as needed */
+    transition: width 0.5s ease; 
+}
+.news a:hover::after{
+    width: 100%;
+}
+/* .news a:hover{
+    text-decoration: underline;
+   
+} */
+.news-main{
+    color: RGB(255, 255, 255);
+    background-color: RGB(0, 102, 204);
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+.icon{
+    margin: 0 15px;
+    color: lightgray;
+}
+hr{
+    margin-top: 18px;
+    opacity: 0.2;
+}
+
+.containers{
+    display: flex;
+    /* max-width: fit-content; */
+    width: 1200px;
+    /* height: 100vh; */
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin: auto; */
+    margin: 50px;
+    
+}
+
+.art-cont{
+    background-color: rgb(254,254,255);
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    padding: 80px;
+    border: 2px solid rgb(235,243,243);
+    border-radius: 8px;
+    /* max-width: fit-content; */
+    /* margin: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    /* margin: auto; try using this to center the three 
+    3 mini containers to be three at the bottom */
+   
+}
+.art-cont a{
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid lightgray; */
+    /* text-align: center; */
+}
+.art-cont img{
+    width: 130px;
+}
+.art-cont p{
+    font-size: 16.8px;
+    
+    font-weight: 100;
+    /* font-family: monospace; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.art-cont h5{
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
