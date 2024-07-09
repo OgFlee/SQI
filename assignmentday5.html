@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Tesla|Model</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .navbar{
             display: flex;
             /* justify-content: space-between; */
@@ -142,6 +146,35 @@
         .cyber{
             border-top: 3px solid rgb(130,131,130);
         }
+        header{
+            display: none;
+        }
+        .dropdown{
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background-color: white;
+            transition: all 1s ease;
+            width: 90%;
+            height: 100vh;
+        }
+        .dropdown p{
+            /* padding: 30px; */
+            margin-bottom: 30px;
+        }
+        
+        header:focus-within .dropdown{
+            left: 0;
+        }
+
+        @media (max-width:1029px) {
+            .links, .iconss{
+                display: none;
+            }
+            header{
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
@@ -156,7 +189,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            
         </div>
-        <div>
+        <div class="links">
             <a href="#" class="a-link">Vehicles</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="#" class="a-link">Energy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="#" class="a-link">Charging</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -167,7 +200,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
-        <div>
+        <div class="iconss">
             <span class="material-symbols-outlined">
                 help
                 </span>
@@ -178,6 +211,16 @@
                         account_circle
                         </span>
         </div>
+
+        <header>
+            <button class="menu">Menu</button>
+            <div class="dropdown">
+                <p>Test1</p>
+                <p>Test2</p>
+                <p>Test3</p>
+                <p>Test4</p>
+            </div>
+        </header>
        
     </nav>
 
