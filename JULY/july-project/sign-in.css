@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style-type: none;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+}
+.presido{
+    background-color: rgb(242,242,241);
+
+}
+.big-cunt{
+    /* background-color: red; */
+    margin: 0 75px;
+}
+.loggo{
+    margin-top: 20px;
+}
+.loggo img{
+    width: 150px;
+}
+
+.up-shit h1{
+    /* text-align: start; */
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 0 35px;
+    padding-top: 15px;
+    /* margin-top: 80px !important; */
+    /* margin-bottom: 50px; */
+
+}
+.mini-cunt{
+    width: 350px;
+    height: 500px;
+    /* max-width: fit-content; */
+    background-color: rgb(255,254,254);
+    margin-top: 20px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(213, 205, 205);
+}
+
+/* form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    height: 30px;
+    cursor: pointer;
+}
+.pass-show input{
+    border: none;
+    outline: none;
+}
+.pass-show{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(64,65,65);
+    border-radius: 2px;
+    width: 350px;
+}
+.pass-show a{
+    margin-left: 150px;
+    color: rgb(9,102,194);
+    font-weight: 700;
+
+
+} */
+.first-p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+    /* margin-left: 20px; */
+    width: 320px;
+    color: rgb(102,102,102);
+}
+.first-p a{
+    color: rgb(9,102,194);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* button{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(9,102,194);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button:hover{
+    background-color: rgb(9, 72, 135);
+} */
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(25,25,25);
+    margin: 30px 40px;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgb(205,206,211);
+  }
+  
+  .divider span {
+    padding: 0 10px;
+  }
+  .auth-stuffs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+.google-align{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.google-align a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(60,65,66);
+    padding: 10px 50px;
+    border: 1px solid rgb(102,102,102);
+    border-radius: 50px;
+    /* width: 300px; */
+    width: fit-content;
+    
+}
+.google-align a:hover{
+    background-color: rgb(240, 240, 250);
+    /* border: 1px solid rgb(240, 240, 250); */
+}
+.google-align2{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.google-align2 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(60,65,66);
+    padding: 10px 60px;
+    border: 1px solid rgb(102,102,102);
+    border-radius: 50px;
+    /* width: 300px; */
+    width: fit-content;
+    /* text-decoration: none; */
+    
+}
+.a-button a{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.a-button button{
+    /* margin-top: 20px; */
+    outline: none;
+    border: none;
+    width: 290px;
+    margin: auto;
+    padding: 15px 30px;
+    color: white;
+    background-color: rgb(9,102,194);
+    border-radius: 50px;
+}
+.google-align2 a:hover{
+    border: 2px solid black;
+}
+.second-p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    width: 380px;
+}
+.second-p a, .third-p a{
+    color: rgb(9,102,194);
+}
+
+.third-p{
+    margin-top: 20px;
+    text-align: center;
+}
+.third-p a:hover{
+    text-decoration: underline;
+}
+footer{
+    /* overflow: hidden; */
+    /* text-align: center; */
+    /* margin: 20px 0; */
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255,254,254);
+    color: rgb(102,102,102);
+}
+footer img{
+    width: 20px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    margin-top: 10px;
+    /* gap: 10px; */
+    /* font-size: 14px; */
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+footer a{
+    color:rgb(102,102,102);
+}
+footer a:hover{
+    color: rgb(9,102,194);
+    text-decoration: underline;
+}
+
+/* .form-signin {
+    max-width: 200px;
+    padding: 1rem;
+  } */
+  .form-floating{
+    /* margin-bottom: 20px; */
+    width: 300px;
+    margin: auto;
+  }
+  
+  /* .form-signin .form-floating:focus-within {
+    z-index: 2;
+  } */
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+
+  footer{
+    /* overflow: hidden; */
+    /* text-align: center; */
+    /* margin: 20px 0; */
+    margin-top: 20px;
+    /* margin-left: 50px; */
+    /* padding-bottom: 30px; */
+    display: flex;
+    align-items: center;
+    background-color: rgb(255,254,254);
+    color: rgb(102,102,102);
+}
+footer img{
+    width: 20px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    margin-left: 60px;
+    margin-top: -5px;
+    /* gap: 10px; */
+    /* font-size: 14px; */
+}
+footer div span{
+    font-size: 12px;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+footer a{
+    color:rgb(102,102,102);
+    font-size: 12px;
+}
+footer a:hover{
+    color: rgb(9,102,194);
+    text-decoration: underline;
+}
