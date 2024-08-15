@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        background-image: url(cacl.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main-container {
+        width: 250px;
+        height: 280px;
+        background-color: rgba(255, 165, 0, 0.5);
+        padding: 20px;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .input-style {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .input-style input {
+        height: 25px;
+        width: 80px;
+      }
+      .button-style {
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        row-gap: 2px;
+      }
+      .button-style button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        padding: 15px;
+      }
+      .butt-et-input {
+        display: flex;
+        gap: 2px;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .butt-et-input input {
+        text-align: center;
+      }
+      .text h1 {
+        color: orange;
+        font-family: cursive;
+      }
+      .text {
+        text-align: center;
+        margin-top: 80px;
+      }
+      @media (max-width: 1028px) {
+        body {
+          background-image: url(cacl.jpg);
+          background-repeat: repeat;
+          background-position: center;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1>CALCULATOR</h1>
+    </div>
+
+    <div class="main-container">
+      <div class="input-style">
+        <input type="text" id="input1" />
+        <input type="text" id="input2" />
+      </div>
+
+      <div class="butt-et-input">
+        <div class="button-style">
+          <button onclick="addButton()">+</button>
+          <button onclick="multButton()">x</button>
+          <button onclick="divButton()">/</button>
+          <button onclick="subButton()">-</button>
+          <button onclick="modButton()">%</button>
+          <button onclick="powerButton()">**</button>
+        </div>
+        <input type="text" id="output" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  let input1 = document.getElementById("input1");
+  let input2 = document.getElementById("input2");
+
+  let output = document.getElementById("output");
+
+  function addButton() {
+    // let add1 = input1.value.split('+')
+    // console.log(add1);
+    // let add2 = input2.value.split('+')
+    // console.log(add2);
+    // let test = add1.concat(add2)
+    // console.log(test);
+    // let addition = Number(add1[0]) + Number(add2[1])
+    // console.log(addition);
+
+    if (input1.value === '' || input2.value === '' ) {
+      alert("Please enter both inputs");
+    } 
+
+    if (isNaN(input1.value) || isNaN(input2.value)) {
+        alert("Please enter numbers only");
+    }
+
+    let add1 = Number(input1.value);
+    let add2 = Number(input2.value);
+    input1.value = "";
+    input2.value = "";
+    // if (input1.value === ' ' || input2.value === ' ') {
+    //     alert('Please enter an input')
+    // } else {
+    //     alert('no input detected')
+    // }
+
+    let addition = add1 + add2;
+    // console.log(addition);
+
+    output.value = addition;
+    // output.innerText = addition
+
+    // console.log(addition);
+  }
+
+  function subButton() {
+    if (input1.value === "" || input2.value === "") {
+      alert("Please enter both inputs");
+    } 
+
+    if (isNaN(input1.value) || isNaN(input2.value)) {
+        alert("Please enter numbers only");
+    }
+    let sub1 = Number(input1.value);
+    let sub2 = Number(input2.value);
+    input1.value = "";
+    input2.value = "";
+
+    let subtract = sub1 - sub2;
+    output.value = subtract;
+  }
+  function divButton() {
+    if (input1.value === "" || input2.value === "") {
+      alert("Please enter both inputs");
+    } 
+
+    if (isNaN(input1.value) || isNaN(input2.value)) {
+        alert("Please enter numbers only");
+    }
+    let div1 = Number(input1.value);
+    let div2 = Number(input2.value);
+    input1.value = "";
+    input2.value = "";
+
+    let division = div1 / div2;
+    output.value = division;
+  }
+
+  
+  function multButton() {
+    if (input1.value === "" || input2.value === "") {
+      alert("Please enter both inputs");
+    }
+
+    if (isNaN(input1.value) || isNaN(input2.value)) {
+        alert("Please enter numbers only");
+    }
+    let mult1 = Number(input1.value);
+    let mult2 = Number(input2.value);
+    input1.value = "";
+    input2.value = "";
+
+    let multiply = mult1 * mult2;
+    output.value = multiply;
+  }
+  function modButton() {
+    if (input1.value === "" || input2.value === "") {
+      alert("Please enter both inputs");
+    } 
+
+    if (isNaN(input1.value) || isNaN(input2.value)) {
+        alert("Please enter numbers only");
+    }
+    let mod1 = Number(input1.value);
+    let mod2 = Number(input2.value);
+    input1.value = "";
+    input2.value = "";
+
+    let modulus = mod1 % mod2;
+    output.value = modulus;
+  }
+  function powerButton() {
+    if (input1.value === "" || input2.value === "") {
+      alert("Please enter both inputs");
+    } 
+
+    if (isNaN(input1.value) || isNaN(input2.value)) {
+        alert("Please enter numbers only");
+    }
+    let pow1 = Number(input1.value);
+    let pow2 = Number(input2.value);
+    input1.value = "";
+    input2.value = "";
+
+    let power = pow1 ** pow2;
+    output.value = power;
+  }
+
+//   function clear() {
+    
+//     input1.value = ''
+//     input2.value = ''
+//     output.value = ''
+//   }
+</script>

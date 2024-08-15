@@ -7,7 +7,6 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
-   /* margin: 20px 20px; */
 }
 .mf-line{
     display: inline-block;
@@ -15,7 +14,6 @@
   height: 35px;
   margin-bottom: 25px;
   margin-left: 10px;
-  /* margin-top: 30px; */
   background-color: rgb(102,102,102);
   border: none;
 }
@@ -23,13 +21,12 @@
     list-style-type: none;
     
 }
+.car-bg{
+  background-color: rgb(242,242,241) !important;
+}
 
 .first-nav ul{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
     align-items: start;
     justify-content: start;
     gap: 50px;
@@ -41,16 +38,12 @@
     justify-content: center;
     color: rgb(102,102,102);
 }
-/* .test:active{
-    color: blue;
-    text-decoration: underline;
-} */
+
 .test:hover{
     color: black;
 }
 .test2{
     width: 25px;
-    /* color: rgb(102,102,102); */
 }
 .loggo{
     width: 100px;
@@ -75,7 +68,6 @@
 }
 .join:hover{
     background-color: RGBA(0, 0, 0, 0.04);
-    /* padding: 20px; */
 }
 .signin{
     color: rgb(9,102,194);
@@ -86,24 +78,77 @@
     padding: 12px 20px;
     border-radius: 50px;
 }
+
+@media (max-width: 1029px){
+  .first-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; */
+  }
+  .move{
+    margin-left: 50px;
+    /* display: flex;
+    gap: 20px; */
+  }
+  .first-nav ul{
+    display: flex;
+    gap: 40px;
+  
+  }
+}
+
+@media (max-width: 933px){
+  .first-nav{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .mf-line{
+    display: none;
+  }
+ 
+}
+
+/* @media (max-width: 520px) {
+  .move{
+    display: none;
+  }
+  
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .second-sect{
     margin-left: 80px;
     display: flex;
-    /* align-items: center; */
 }
 .second-sect a{
     text-decoration: none;
 }
 .after-nav{
     width: 600px;
-    /* margin-top: 20px; */
     margin-top: 90px;
 }
 .after-nav h1{
     font-size: 50px;
     color: rgb(179,64,33);
     font-weight: 10;
-    /* font-family: Arial, Helvetica, sans-serif; */
 
 }
 .google-align{
@@ -118,7 +163,6 @@
     padding: 8px 100px;
     border: 1px solid rgb(102,102,102);
     border-radius: 50px;
-    /* width: 300px; */
     width: fit-content;
     
 }
@@ -365,6 +409,9 @@
   .design h2{
     color: rgb(179,64,33);
     font-size: 30px;
+  }
+  .design p{
+    color: black;
   }
   .try-sth{
     margin-left: 100px;

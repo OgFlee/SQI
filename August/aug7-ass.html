@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body{
+            margin-top: 140px;
+            padding: 0;
+                    }
+        .container{
+            /* margin-bottom: 50px; */
+            display: block;
+            align-items: center;
+            width: 200px;
+            height: 250px;
+            background-color: grey;
+            margin: auto;
+            text-align: center;
+            
+        }
+        .container h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: cursive;
+            font-weight: 600;
+            /* margin: auto; */
+            margin-bottom: 20px;
+        }
+        .container form {
+            /* width: 300px; */
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container div{
+            margin-top: 30px;
+            /* background-color: red; */
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Word App</h1>
+        <form onsubmit="return false">
+            <input type="text" id="inputWord" placeholder="Type a word">
+            <button onclick="buttonCheck()">Check</button>
+            <button onclick="deleteButt()">Delete</button>
+        </form>
+        <div id="output"></div>
+    </section>
+
+
+    <script>
+        
+        let badWord = ['shit', 'stupid', 'foolish', 'fuck']
+        // let badWord = `"shit" "stupid" "foolish" "fuck"`
+        // console.log(badWord);
+
+        function buttonCheck() {
+            let myOutput = document.getElementById('output')
+
+            let myWord = document.getElementById('inputWord')
+            let text = myWord.value
+
+            badWord.forEach(letters => {
+                // let remove = new RegExp(letters, 'gi')
+                let remove = new RegExp(letters, 'gi')
+                text = text.replace(remove, '*'.repeat(letters.length))
+                // text = text.replaceAll(remove, '*'.repeat(letters.length))
+            });
+
+           
+
+    
+            myOutput.textContent = text
+        }
+
+        function deleteButt() {
+                let confirmer = window.confirm('Are you sure?')
+
+                if (confirmer) {
+                    
+                    alert(`deleted`)
+
+                        let myOutput = document.getElementById('output')
+
+                        let myWord = document.getElementById('inputWord')
+                        myWord.value = ''
+                        myOutput.textContent = ''
+                }else{
+                    alert(`not deleted`)
+                }
+
+                
+
+            }
+        
+
+        
+    </script>
+</body>
+</html>

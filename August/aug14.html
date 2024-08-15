@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+    <style>
+        section{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div>
+        <input type="text" id="input">
+        <button onclick="arith()">Calc</button>
+    </div>
+    <div id="output">
+
+    </div> -->
+
+
+    <section>
+        <input type="text" id="input">
+        <button onclick="pushButt()">Push</button>
+        <button onclick="popButt()">Pop</button>
+    </section>
+
+
+</body>
+</html>
+<script>
+
+
+    // let arr = new Array(4).fill('hello')
+    // console.log(arr);
+
+    // let myArr = ['hello', 23, undefined, null, true, [], {} ]
+    // console.log(myArr);
+    // myArr[3] = 'notNull'
+    // console.log(myArr);
+
+
+    // const fruits = ['apple', 'banana', 'mango']
+    // const veggies = ['broccoli', 'leaf', 'cabbage']
+    // const concatBoth = fruits.concat(veggies)
+    // console.log(concatBoth);
+
+    // let inputText = document.getElementById('input')
+    // let output = document.getElementById('output')
+    // function arith() {
+         
+    //     let arr = inputText.value.split('+')
+    //     console.log(arr);
+    //     let solution = Number(arr[0]) + Number(arr[1])
+
+    //     output.innerHTML = solution
+
+        
+    // }
+
+
+
+    // const numbers = [1,2,3,4,5]
+    // console.log(numbers.slice(0,)); 
+
+
+    // newNumbers = [6,7,8,9,10,11]
+    // // newNumbers.splice(2, 2) //to delete ikn an array
+    // // newNumbers.splice(0, 4, 1,2,3,4,5) //to replace 
+    // newNumbers.splice(2,0, 'hello', [], 'hi') //to add
+    // console.log(newNumbers);
+
+
+
+//     const numberss = [1, 2, 3, 4, 5]
+// numberss.pop() // -> remove one item from the end
+// console.log(numberss) // -> [1,2,3,4]
+    
+    
+    //push pushes an item at the last side of an array
+    //pop, pops an item from the back of an array
+    //shift removes an item from the neginning of an array
+    //unshift adds an item to the beginning of an array 
+
+
+
+
+    // concatenating an array involves joining two or more arrays
+    // split converts string to an array  and join converts an array to string
+
+//CLASSWORK
+//one input, two buttons
+//one button is push, the other is pop
+
+
+        let myArray = [1,2,3,4,5,6]
+        console.log(myArray);
+
+        let input = document.getElementById('input')
+
+
+        function pushButt() {
+        //    input.value = myArray.push()
+        // let arrPush = 
+        myArray.push(input.value)
+        input.value = ''
+           console.log(myArray);
+            // console.log(arrPush);
+        }
+
+        function popButt() {
+            // arrPush =
+            myArray.pop()
+            console.log(myArray);
+        }
+
+
+//ASSIGNMNET
+//Calculator, it takes two input, and you should be able to add, divide, modulus, sqrt root, subtract, multiply
+
+</script>

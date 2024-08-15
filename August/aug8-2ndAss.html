@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-image: url(https://t4.ftcdn.net/jpg/05/28/90/61/360_F_528906125_hIJGjopyvcymzICiHiwL1ne4kuMezhQn.jpg); */
+            background-image: url(https://img.freepik.com/premium-photo/science-dice-probabilities-question-mark_23-2148416075.jpg);
+            background-repeat: repeat;
+            background-size: contain;
+        }
+        .main-container{
+            width: 300px;
+            height: 450px;
+            background-color: rgba(246, 246, 189, 0.5);
+            margin: auto;
+            display: flex;
+            margin-top: 80px;
+            /* align-items: center; */
+            justify-content: center;
+            /* text-align: center; */
+            /* opacity: 0.5; */
+        }
+        
+        .display-container{
+            width: 120px;
+            height: 40px;
+            padding: 20px;
+            background-color: grey;
+        }
+        .input-container{
+            /* width: 10px; */
+        }
+        .input-container input{
+            width: 25px !important;
+            height: 25px;
+            outline: none;
+            border: none;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+            text-align: center;
+        }
+        .button-container{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            border-radius: 5px;
+            /* margin: 5px; */
+            flex-wrap: wrap;
+            /* width: 100px; */
+            max-width: 150px;
+            width: fit-content;
+            height: 200px;
+            background-color: grey;
+            /* padding: 2px; */
+        }
+        .button-container button{
+            padding: 10px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            /* outline: none; */
+            box-shadow: none;
+        }
+        .button-container button:nth-child(11){
+            /* display: block; */
+            /* align-items: center; */
+            padding: 2px 10px !important;
+            /* width: fit-content; */
+        }
+        .move{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .guess-button{
+            margin-top: 20px;
+        }
+        .guess-button button{
+            padding: 5px 10px;
+            background-color: rgba(246, 246, 189);
+            border: none;
+            cursor: pointer;
+            /* box-shadow: 10px 10px 10px solid black; */
+        }
+        .guess-button button:hover{
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+
+    <section class="main-container test">
+        <div class="move">
+            <div class="display-container" id="displayContainer"> 
+                
+                <p>Pick a number</p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="guessInput">
+            </div>
+            <div class="button-container">
+                <button onclick="buttonGuess(0)">0</button>
+                <button onclick="buttonGuess(1)">1</button>
+                <button onclick="buttonGuess(2)">2</button>
+                <button onclick="buttonGuess(3)">3</button>
+                <button onclick="buttonGuess(4)">4</button>
+                <button onclick="buttonGuess(5)">5</button>
+                <button onclick="buttonGuess(6)">6</button>
+                <button onclick="buttonGuess(7)">7</button>
+                <button onclick="buttonGuess(8)">8</button>
+                <button onclick="buttonGuess(9)">9</button>
+                <!-- <button><img src="refresh.svg" alt=""></button> -->
+                <button id="refreshButton"><img src="refresh.svg" alt=""></button>
+            </div>
+            <div class="guess-button">
+                <button id="guessButton">Guess</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+ //2. guessing game, in the input, type a number only within 0 and 9, need math.random in a function
+ 
+
+    let randomNumber = Math.floor(Math.random() * 10)
+    console.log(randomNumber);
+
+    // const displayContainer = document.getElementById('displayContainer')
+    // displayContainer.innerText = `Testing`
+    // console.log(displayContainer);
+
+    function buttonGuess(number) {
+        document.getElementById('guessInput').value = number
+        // console.log(guessInput);
+    }
+
+    function guessButton() {
+        let myGuess = document.getElementById('guessInput').value
+        let displayContainer = document.getElementById('displayContainer')
+
+        if (myGuess === randomNumber) {
+            
+            displayContainer.innerText = `testing`
+            
+        } else {
+            
+            displayContainer.innerText = `failed bro`
+        }
+    }
+
+
+    
+    // guessInput.value = buttonGuess.Number
+
+    // console.log(guessInput);
+
+
+</script>
