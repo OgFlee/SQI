@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiplication Table</title>
+    <style>
+      .output {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 700px;
+        /* max-height: fit-content; */
+        /* max-width: fit-content; */
+        background-color: purple;
+      }
+    </style>
   </head>
   <body>
     <div>
       <input type="text" id="inputOne" />
       <input type="text" id="inputTwo" />
       <button onclick="clickMe()">Get table</button>
-      <div id="output"></div>
+      <div class="output">
+        <div  id="output">
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
@@ -20,14 +36,46 @@
   // IT WILL GERATE A MULTIPLICATION TABLE FROM 5-7 THAT IS 5*1 TO 5*12, THEN MOVE TO 6 TIMES TABLES THEN 7 TIMES TABLE
   // HINT{HAS TWO LOOPS, A LOOP IN ANOTHER LOOP}
 
-  let inputOne = document.getElementById('inputOne')
-  let inputTwo = document.getElementById('inputTwo')
-
-  let output = document.getElementById('output')
+  //console.log(`${inputOne} * ${i} = ${inputOne * i}`);
+  //console.log(`${inputTwo} * ${j} = ${inputTwo * j}`);
 
   function clickMe() {
-    
+    let inputOne = document.getElementById("inputOne");
+    let inputTwo = document.getElementById("inputTwo");
+
+    let output = document.getElementById("output");
+    // inputOne = Number(inputOne.value);
+    // console.log(inputOne);
+    // inputTwo = Number(inputTwo.value);
+    let input1 = Number(inputOne.value);
+    let input2 = Number(inputTwo.value);
+    //  console.log(inputTwo);
+
+    if (isNaN(input1) || isNaN(input2)) {
+      alert("Please input a number");
+      inputOne.value = "";
+      inputTwo.value = "";
+      return;
+    }
+
+    if (input2 < input1) {
+      alert("Second input cannot be less than first input");
+      inputOne.value = "";
+      inputTwo.value = "";
+      return;
+    }
+
+    output.innerHTML = "";
+
+    for (let i = input1; i <= input2; i++) {
+      for (let j = 1; j <= 12; j++) {
+        // console.log(`${i} * ${j} = ${i * j}`);
+        let outerOutput = `${i} * ${j} = ${i * j}`
+        output.innerText += outerOutput + "\n"
+      }
+      output.innerText += "\n"
+    }
+    inputOne.value = "";
+    inputTwo.value = "";
   }
-
-
 </script>
