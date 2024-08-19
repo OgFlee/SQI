@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="input1" placeholder="Enter oC value" />
+      <button onclick="convertCelsiusToFahrenheit()">Convert</button>
+      <div id="output"></div>
+    </div>
+  </body>
+</html>
+<script>
+  //Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32
+  //. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+    
+  function convertCelsiusToFahrenheit() {
+    let output = document.getElementById('output')
+    let input = document.getElementById("input1");
+    input1 = Number(input.value);
+    
+        function convertFahrenheit(a, b) {
+            let firstConvert = a * b
+            return function finalConvert(c) {
+               return firstConvert + c
+            }
+        }
+        input.value = ''
+    
+    let mainOut = convertFahrenheit(input1, (9 / 5))(32);
+    output.innerText = mainOut
+  }
+</script>

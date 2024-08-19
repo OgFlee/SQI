@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting|Functions</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="input">
+        <button onclick="areaOfCircle()">Click</button>
+        <div></div>
+    </div>
+</body>
+</html>
+<script>
+
+
+    // hoisting
+    // using the var will declare a variable name to be undefined instead of showing an error
+    //usign let, you can not initalize a variable above the initialized varaible but the var keyword can allow you bypass
+    // by making the unitialized varaible uset to undefined... that is partial hoisting
+    // they jeyword that allows complete hoisting is function, no matter where you call the function, it will still be able to do its job unlike the let and other keywords
+    // three things a function can do
+    // 1. a function can be given a varaible name
+    
+    //when you assign a var name to a function, that is called a function expression let ourFunc = function (){log('hello')}
+    //finction decLRATION is fnction hello(params){log('hello')}
+    //arrow function
+    // let test = () => {
+    //     console.log('hi');
+    // }
+    // imedietly invoked fucntion expression IIFA
+
+    //to make a function happen immeditely without waiting for a call
+    // (function (params) {
+    //     console.log('hello bro');
+    // })()
+    // OR
+    // (function (params) {
+    //     console.log('hello bro');
+    // }())
+    // 2. it can accept argument and parameters
+    //args are real values while parameters are variable
+
+    // function multiply(a, b) {
+    //     return a * b
+    // }
+    // multiply(5, 4)
+    // multiply(2, 40)
+
+
+    function calculator(a = 0, b = 0, c = 'add') {
+        if (c === 'multiply') {
+            return a * b
+        }else if(c === 'divide'){
+            return a / b
+        }else{
+            a + b
+        }
+        
+    }
+    calculator(5, 4, 'multiply')
+    calculator(2, 40, 'divide')
+    console.log(calculator(5));
+
+    function calculateMassAndWeigth(a, b) {
+        let mass = a * b
+        return function calculateAns(gravity){
+            return mass * gravity
+        }
+    }
+    console.log(calculateMassAndWeigth(10, 10)(9.81));
+
+
+    function areaOfCircle(r = 10) {
+        return Math.PI * r * r
+    }
+    console.log(areaOfCircle());
+
+    // selecting using class in htmml
+    // let test = document.querySelector('input')
+    // if you use id for the button, add an event listner
+    // button.addEventListener('click', function (params) {
+    //     let pTag = document.createElement('p')
+    //     let inputVal = input.value
+    // })
+
+</script>
