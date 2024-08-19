@@ -21,6 +21,12 @@
     let output = document.getElementById('output')
     let input = document.getElementById("input1");
     input1 = Number(input.value);
+
+    if (isNaN(input1)) {
+      alert("Please input a number");
+      input.value = "";
+      return;
+    }
     
         function convertFahrenheit(a, b) {
             let firstConvert = a * b
