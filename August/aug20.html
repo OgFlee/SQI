@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope|Objects</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // the shorthand or easiest way to call an object is
+  //a function in an object is called a method
+  // let myObj  = new Object()
+  // or
+
+  // let myObj = {
+  //     name : 'flee',
+  //     age : 12,
+  //     class : 'js',
+  //     occupation : 'stud',
+  //     swim : function (params) {
+  //         return `i am in a pool`
+  //     },
+  //     isRunning : false
+  // }
+  // // to modify an object
+  // myObj.age = 20
+  // console.log(myObj);
+  // console.log(myObj.name);
+  // console.log(myObj['class']);
+  // console.log(myObj.swim());
+  // console.log(myObj.age);
+
+  // for (let key in wisdom) {
+  //     console.log(`${key} : ${wisdom[key]}`);
+
+  // }
+
+  const users = {
+    Alex: {
+      email: "alex@alex.com",
+      skills: ["HTML", "CSS", "JavaScript"],
+      age: 20,
+      isLoggedIn: false,
+      points: 30,
+    },
+    Asab: {
+      email: "asab@asab.com",
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Redux",
+        "MongoDB",
+        "Express",
+        "React",
+        "Node",
+      ],
+      age: 25,
+      isLoggedIn: false,
+      points: 50,
+    },
+    Brook: {
+      email: "daniel@daniel.com",
+      skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+      age: 30,
+      isLoggedIn: true,
+      points: 50,
+    },
+    Daniel: {
+      email: "daniel@alex.com",
+      skills: ["HTML", "CSS", "JavaScript", "Python"],
+      age: 20,
+      isLoggedIn: false,
+      points: 40,
+    },
+    John: {
+      email: "john@john.com",
+      skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+      age: 20,
+      isLoggedIn: true,
+      points: 50,
+    },
+    Thomas: {
+      email: "thomas@thomas.com",
+      skills: ["HTML", "CSS", "JavaScript", "React"],
+      age: 20,
+      isLoggedIn: false,
+      points: 40,
+    },
+    Paul: {
+      email: "paul@paul.com",
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MongoDB",
+        "Express",
+        "React",
+        "Node",
+      ],
+      age: 20,
+      isLoggedIn: false,
+      points: 40,
+    },
+  };
+
+  let count = 0;
+  let isLoggedIn = 0;
+  let pointsUser = [];
+  let isLoggedInUser = [];
+  for (const user in users) {
+    // console.log(user);
+    if (users[user].points >= 50) {
+      count++;
+      pointsUser.push(user);
+      // console.log(count);
+      // console.log(`the names of users with 50+ points are ${user}`);
+      // return;
+    }
+    if (users[user].isLoggedIn === true) {
+      isLoggedIn++;
+      isLoggedInUser.push(user);
+      // console.log(isLoggedIn);
+      // console.log(`the loggedIn users are ${user}`);
+      // return;
+    }
+  }
+
+  console.log(`Number of users with 50+ points: ${count}`);
+  console.log(`The names of users with 50+ points are: ${pointsUser.join(" and ")}`);
+  console.log(`Number of logged-in users: ${isLoggedIn}`);
+  console.log(`The logged-in users are: ${isLoggedInUser.join(" and ")}`);
+  // console.log(user);
+  //ASSIGNMENT, CREATE A CAROUSEL
+  // CAROUSEL OF COLOURS OR CAROUSEL WITH PICTURES OR AN ARRAY OF ID CARDS
+</script>
