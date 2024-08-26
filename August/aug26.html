@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <input type="search" oninput="search(event)" />
+    <div id="preview"></div>
+    <br>
+    <br>
+    <button onclick="check()"><input type="checkbox" name="" id=""></button>
+    <br><br>
+
+    <input type="password" name="" id="passInput"><button id="butt" onclick="hideAndShow()">show</button>
+    <br><br>
+
+    <input type="number" name="" id="numberValue"> <button onclick="goUp('add')">goUp</button> <button onclick="goDown('minus')">goDown</button>
+
+  </body>
+</html>
+<script>
+  let arr = ["rice", "beans", "onions", "potatoes"];
+
+  arr.forEach((product) => {
+    preview.innerHTML += `<h1>${product} </h1>`;
+  });
+
+  function search(ev) {
+    // console.log(ev.target.value);
+    myValue = ev.target.value.trim();
+
+    let filterArr = arr.filter((product) => {
+      return product.includes(myValue);
+    });
+
+    if (filterArr.length === 0) {
+      preview.innerHTML = `not found`;
+    } else {
+      preview.innerHTML = "";
+      // preview.innerHTML = filterArr
+      filterArr.forEach((product) => {
+        preview.innerHTML += `<h1>${product} </h1>`;
+      });
+    }
+    console.log(filterArr);
+  }
+  body.style.backgroundColor = "white";
+  function check() {
+    // let body = document.getElementById("body");
+  
+    if (body.style.backgroundColor === "white") {
+     body.style.backgroundColor = "black";
+    //   return;
+    } 
+    else {
+     body.style.backgroundColor = "white";
+    }
+  }
+  //using tenary operator
+  // body.style.backgroundColor = "white" ? body.style.backgroundColor = "black" : body.style.backgroundColor = "white";
+
+  let passInput = document.getElementById('passInput')
+  let button = document.getElementById('butt')
+  function hideAndShow() {
+    
+    // if (passInput.type === 'password') {
+    //     passInput.type = 'text'
+    //     button.innerText = 'hide'
+    // } else {
+    //     passInput.type = 'password'
+    //     button.innerText = 'show'
+    // }
+    passInput.type === 'password' ? button.innerText = 'hide' : button.innerText = 'show';
+    passInput.type === 'password' ? passInput.type = 'text' :passInput.type = 'password'  ;
+  }
+
+
+  function goUp(ops) {
+    let numberValue = Number(document.getElementById('numberValue').value)
+    numberValue === 'add' ? numberValue++ : numberValue--
+    document.getElementById('numberValue').value = numberValue
+  }
+
+  
+
+  //recharge pin and generate pin
+
+</script>

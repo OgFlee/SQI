@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<body>
+     //forEach, map ,reduce, some, every, findIndex, Filter
+</body>
+</html>
+<script>
+   
+    //difference btw the for loop and the map loop
+    // the map loop converts the elements in the array
+    //map loop can be used to create new arrays or new items in an existing arr
+
+
+    let arr = [1,2,3,4,5,6,7,8,9,10]
+    let namesArr = [
+        {name: 'dan', class: 'ss3'},
+        {name: 'daniel', class: 'js3'}
+
+    ]
+    arr.forEach((num, index, array) => {
+        console.log(`2 * ${index} = ${2 * index}`);
+        // console.log(num, index, array);
+        // console.log(index);
+        // console.log(array);
+
+        
+        
+    });
+
+    let newArr = arr.map((num, index, array) => {
+        console.log('test');
+        return 2
+    })
+
+    // let total = arr.reduce((a, b) => {
+    //     // where a is the accumulator and the b is the index of the arr
+    //     return a + b
+
+    // }, 0)
+    //, 0 is assigning 0 to the accumulator
+    //writing explicit function
+    let total = arr.reduce((a, b) =>  a + b , 0)
+    //for * and /, we give the accumulator a value of 1
+    console.log(total);
+
+
+    //some retuns a bool
+
+    let someTypeShii = arr.some((num) => num == 5)
+    console.log(someTypeShii);
+
+    //for every, it does the the opposite  of some, if every element in the array meets the condition, then it returns true, but if one person is meeting the condition or nothing, it retuns false
+    let everyTypeShii = arr.every((num) => num == 5)
+    console.log(everyTypeShii);
+    //or
+    let everyTypeShii2 = arr.every((num) => typeof num ==="number")
+    console.log(everyTypeShii2);
+
+    //find, looks for and display what is being looked for, also finds what fulfill the condition
+
+    let findDaniel = namesArr.find((nameVar) => nameVar.name === 'daniel')
+    console.log(findDaniel);
+
+    //findIndex, retuns -1 if its not found
+
+    let findDaniel2 = namesArr.findIndex((nameVar) => nameVar.name === 'daniel')
+    console.log(findDaniel2);
+
+    //ASSIGNMENT
+//read on filter and there will be a quiz
+//to do list
+</script>

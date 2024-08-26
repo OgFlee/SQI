@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <select id="provider">
+      <option value="">choose provider</option>
+      <option value="mtn">mtn</option>
+      <option value="glo">glo</option>
+      <option value="airtel">airtel</option>
+      <option value="9mobile">9mobile</option>
+    </select>
+
+    <select id="amount">
+      <option value="">choose amount</option>
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="500">500</option>
+      <option value="1000">1000</option>
+    </select>
+
+    <p id="pinOutput"></p>
+    <button onclick="generetePin()">generate</button>
+
+    <input type="text" id="input" placeholder="*310*pin#" />
+    <button onclick="loadCard()">load</button>
+  </body>
+</html>
+<script>
+  let pin = "";
+  function generetePin() {
+    let providerChoice = document.getElementById("provider").value;
+    let amtChoice = document.getElementById("amount").value;
+    let pinOutput = document.getElementById('pinOutput')
+   
+    if (providerChoice === "" || amtChoice === "") {
+      alert("Please select a provider and an amount");
+      // return;
+    } else {
+        pin = ''
+      for (let index = 0; index < 15; index++) {
+        let randomNum = Math.floor(Math.random() * 10);
+        pin += randomNum;
+        
+      }
+      pinOutput.innerHTML = `<br>${pin}`;
+      
+      // console.log(pin);
+    }
+    
+    // pinOutput = ''
+  }
+
+  function loadCard() {
+    let providerChoice = document.getElementById("provider").value;
+    let amtChoice = document.getElementById("amount").value;
+    let inputText = document.getElementById('input').value;
+    let placeholder = `*310*${pin}#`;
+    // inputText = ''
+    //  pin = ''
+    if (inputText !== placeholder) {
+      alert("Invalid Format");
+    //   return;
+    } else {
+        
+      alert(`Your recharge of ${providerChoice}-${amtChoice} with pin: ${pin} was successful`);
+
+      
+      inputText = ''
+      pin = ''
+      providerChoice.value = ''
+      amtChoice.value = ''
+      
+    }
+    
+  }
+//   providerChoice = ''
+//   amtChoice = ''
+//   inputText = ''
+</script>
