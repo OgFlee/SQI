@@ -56,9 +56,11 @@
   }
 
   function loadCard() {
-    let providerChoice = document.getElementById("provider").value;
-    let amtChoice = document.getElementById("amount").value;
+    let providerElement = document.getElementById("provider");
+    let amtElement = document.getElementById("amount");
     let inputText = document.getElementById('input').value;
+    let providerClear = providerElement.value
+    let amountClear = amtElement.value
     let placeholder = `*310*${pin}#`;
     // inputText = ''
     //  pin = ''
@@ -67,13 +69,15 @@
     //   return;
     } else {
         
-      alert(`Your recharge of ${providerChoice}-${amtChoice} with pin: ${pin} was successful`);
+      alert(`Your recharge of ${providerClear}-${amountClear} with pin: ${pin} was successful`);
 
       
-      inputText = ''
-      pin = ''
-      providerChoice.value = ''
-      amtChoice.value = ''
+      input.value = ''
+      pin.value = ''
+    // providerClear.value = ''
+    // amountClear.value = ''
+    providerElement.value = ''
+    amtElement.value = ''
       
     }
     
